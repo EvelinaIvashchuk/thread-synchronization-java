@@ -1,0 +1,6 @@
+Lab3 % java -cp out coordination.ProducerConsumerDemo nosync
+Режим nosync: 2 виробники по 10000 чисел, 2 споживачі, місткість буфера 5
+P1: java.lang.IllegalMonitorStateException: current thread is not owner
+P2: java.lang.IllegalMonitorStateException: current thread is not owner
+ЗАВИСАННЯ через 5 с, живі потоки: C1=WAITING C2=WAITING
+Сума = 2, очікувано 100010000 – ПОМИЛКА

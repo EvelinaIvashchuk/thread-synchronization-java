@@ -1,0 +1,5 @@
+Lab3 % java -cp out coordination.ProducerConsumerDemo if
+Режим if: 2 виробники по 10000 чисел, 2 споживачі, місткість буфера 5
+C2: java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "coordination.Buffer.take()" is null
+C1: java.lang.NullPointerException: Cannot invoke "java.lang.Integer.intValue()" because the return value of "coordination.Buffer.take()" is null
+Сума = 2830, очікувано 100010000 – ПОМИЛКА

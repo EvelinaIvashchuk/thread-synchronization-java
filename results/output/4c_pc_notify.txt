@@ -1,0 +1,4 @@
+Lab3 % java -cp out coordination.ProducerConsumerDemo notify 10000 1
+Режим notify: 2 виробники по 10000 чисел, 2 споживачі, місткість буфера 1
+ЗАВИСАННЯ через 5 с, живі потоки: P1=WAITING P2=WAITING C1=WAITING C2=WAITING
+Сума = 6, очікувано 100010000 – ПОМИЛКА

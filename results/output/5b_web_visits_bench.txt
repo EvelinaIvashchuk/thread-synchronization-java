@@ -1,0 +1,7 @@
+Lab3 % java -cp out variant.WebVisitsDemo bench
+Лічильник відвідувань: 10000000 подій, 20 URL, медіана з 3 після 2 прогрівів
+Реалізація                    p = 2      p = 4      p = 8
+synchronized HashMap         332 мс     477 мс     461 мс   інваріант OK
+HashMap + ReentrantLock      662 мс     202 мс     201 мс   інваріант OK
+CHM + AtomicLong             105 мс      91 мс     134 мс   інваріант OK
+CHM + LongAdder               49 мс      60 мс      67 мс   інваріант OK

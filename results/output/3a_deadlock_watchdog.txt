@@ -1,0 +1,5 @@
+Lab3 % java -cp out deadlock.DeadlockDemo
+Аліса: Богдан вклонився мені
+Богдан: Аліса вклонився мені
+DEADLOCK: T1 чекає deadlock.DeadlockDemo$Conflict@131245c5, який утримує T2
+DEADLOCK: T2 чекає deadlock.DeadlockDemo$Conflict@5cb5886d, який утримує T1

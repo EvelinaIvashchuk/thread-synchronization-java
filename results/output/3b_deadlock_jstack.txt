@@ -1,0 +1,43 @@
+Lab3 % java -cp out deadlock.DeadlockDemo nowatch &
+Аліса: Богдан вклонився мені
+Богдан: Аліса вклонився мені
+Lab3 % jps
+49619 Main
+33172 DeadlockDemo
+36413 Main
+98895 
+33183 Jps
+Lab3 % jstack 33172 | sed -n '/Found one/,/Found 1 deadlock/p'
+Found one Java-level deadlock:
+=============================
+"T1":
+  waiting to lock monitor 0x00000074bd0f4a80 (object 0x00000070106164e8, a deadlock.DeadlockDemo$Conflict),
+  which is held by "T2"
+
+"T2":
+  waiting to lock monitor 0x00000074bd0f4b60 (object 0x00000070106164a0, a deadlock.DeadlockDemo$Conflict),
+  which is held by "T1"
+
+Java stack information for the threads listed above:
+===================================================
+"T1":
+	at deadlock.DeadlockDemo$Conflict.bowBack(DeadlockDemo.java:35)
+	- waiting to lock <0x00000070106164e8> (a deadlock.DeadlockDemo$Conflict)
+	at deadlock.DeadlockDemo$Conflict.bow(DeadlockDemo.java:31)
+	- locked <0x00000070106164a0> (a deadlock.DeadlockDemo$Conflict)
+	at deadlock.DeadlockDemo.lambda$main$0(DeadlockDemo.java:45)
+	at deadlock.DeadlockDemo$$Lambda/0x000000a001000c30.run(Unknown Source)
+	at java.lang.Thread.runWith(java.base@21.0.13.0.3/Thread.java:1596)
+	at java.lang.Thread.run(java.base@21.0.13.0.3/Thread.java:1583)
+"T2":
+	at deadlock.DeadlockDemo$Conflict.bowBack(DeadlockDemo.java:35)
+	- waiting to lock <0x00000070106164a0> (a deadlock.DeadlockDemo$Conflict)
+	at deadlock.DeadlockDemo$Conflict.bow(DeadlockDemo.java:31)
+	- locked <0x00000070106164e8> (a deadlock.DeadlockDemo$Conflict)
+	at deadlock.DeadlockDemo.lambda$main$1(DeadlockDemo.java:46)
+	at deadlock.DeadlockDemo$$Lambda/0x000000a001001000.run(Unknown Source)
+	at java.lang.Thread.runWith(java.base@21.0.13.0.3/Thread.java:1596)
+	at java.lang.Thread.run(java.base@21.0.13.0.3/Thread.java:1583)
+
+Found 1 deadlock.
+Lab3 % kill 33172

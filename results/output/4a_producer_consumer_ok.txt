@@ -1,0 +1,6 @@
+Lab3 % java -cp out coordination.ProducerConsumerDemo
+Режим ok: 2 виробники по 10000 чисел, 2 споживачі, місткість буфера 5
+Сума = 100010000, очікувано 100010000 – OK
+Lab3 % java -cp out coordination.BlockingQueueDemo
+ArrayBlockingQueue(5): 2 виробники по 10000 чисел, 2 споживачі
+Сума = 100010000, очікувано 100010000 – OK

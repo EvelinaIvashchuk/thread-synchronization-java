@@ -1,0 +1,24 @@
+Lab3 % java -cp out locks.SyncMethodsDemo
+T1: c = 2
+T2: c = 2
+T2: c = 4
+T1: c = 4
+T2: c = 6
+T1: c = 6
+T1: c = 8
+T2: c = 8
+T1: c = 10
+T2: c = 10
+Очікувано 10, отримано 10; час 1596 мс
+Lab3 % java -cp out locks.SyncMethodsDemo dec
+T1: c = 0
+T2: c = 0
+T2: c = 0
+T1: c = 0
+T1: c = 0
+T2: c = 0
+T2: c = 0
+T1: c = 0
+T1: c = 0
+T2: c = 0
+Очікувано 0, отримано 0; час 1349 мс

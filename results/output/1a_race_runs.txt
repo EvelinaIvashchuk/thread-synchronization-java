@@ -1,0 +1,36 @@
+Lab3 % java -cp out race.RaceDemo
+T1: c = 1
+T2: c = 1
+T2: c = 2
+T1: c = 2
+T1: c = 3
+T2: c = 3
+T2: c = 4
+T1: c = 4
+T2: c = 5
+T1: c = 5
+Очікувано 10, отримано 5
+Lab3 % java -cp out race.RaceDemo
+T1: c = 1
+T2: c = 1
+T1: c = 2
+T2: c = 2
+T1: c = 3
+T2: c = 3
+T1: c = 4
+T2: c = 4
+T1: c = 5
+T2: c = 5
+Очікувано 10, отримано 5
+Lab3 % java -cp out race.RaceDemo
+T1: c = 1
+T2: c = 1
+T1: c = 2
+T2: c = 2
+T1: c = 3
+T2: c = 3
+T1: c = 4
+T2: c = 4
+T1: c = 5
+T2: c = 5
+Очікувано 10, отримано 5

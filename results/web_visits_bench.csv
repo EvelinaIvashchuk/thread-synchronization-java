@@ -1,0 +1,5 @@
+Реалізація;p = 2, мс;p = 4, мс;p = 8, мс;Інваріант
+synchronized HashMap;332;477;461;OK
+HashMap + ReentrantLock;662;202;201;OK
+ConcurrentHashMap + AtomicLong;105;91;134;OK
+ConcurrentHashMap + LongAdder;49;60;67;OK

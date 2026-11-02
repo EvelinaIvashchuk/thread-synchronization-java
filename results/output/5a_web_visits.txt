@@ -1,0 +1,7 @@
+Lab3 % java -cp out variant.WebVisitsDemo
+4 потоки, 1000000 подій, 20 URL
+Наївна (HashMap без синхронізації)   ІНВАРІАНТ ПОРУШЕНО – сума = 851421 з 1000000 (втрачено 148579), неправильних URL: 20 з 20
+synchronized HashMap                 OK – сума = 1000000 з 1000000 (втрачено 0), неправильних URL: 0 з 20
+HashMap + ReentrantLock              OK – сума = 1000000 з 1000000 (втрачено 0), неправильних URL: 0 з 20
+ConcurrentHashMap + AtomicLong       OK – сума = 1000000 з 1000000 (втрачено 0), неправильних URL: 0 з 20
+ConcurrentHashMap + LongAdder        OK – сума = 1000000 з 1000000 (втрачено 0), неправильних URL: 0 з 20
