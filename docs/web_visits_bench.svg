@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-label="Лічильник відвідувань: 10⁷ подій, 20 URL">
+<style>
+  .surface { fill: #fcfcfb; }
+  .title { fill: #0b0b0b; font: 600 16px system-ui, -apple-system, "Segoe UI", sans-serif; }
+  .sub { fill: #52514e; font: 13px system-ui, -apple-system, "Segoe UI", sans-serif; }
+  .tick { fill: #898781; font: 12px system-ui, -apple-system, "Segoe UI", sans-serif; font-variant-numeric: tabular-nums; }
+  .val { fill: #52514e; font: 10.5px system-ui, -apple-system, "Segoe UI", sans-serif; font-variant-numeric: tabular-nums; }
+  .axis-title { fill: #52514e; font: 12px system-ui, -apple-system, "Segoe UI", sans-serif; }
+  .grid { stroke: #e1e0d9; stroke-width: 1; }
+  .base { stroke: #c3c2b7; stroke-width: 1; }
+  .f1 { fill: #2a78d6; } .f2 { fill: #eb6834; } .f3 { fill: #1baf7a; } .f4 { fill: #8a5cd1; }
+  @media (prefers-color-scheme: dark) {
+    .surface { fill: #1a1a19; }
+    .title { fill: #f0efec; }
+    .sub, .axis-title, .val { fill: #c3c2b7; }
+    .grid { stroke: #2c2c2a; }
+    .base { stroke: #383835; }
+    .f1 { fill: #3987e5; } .f2 { fill: #d95926; } .f3 { fill: #199e70; } .f4 { fill: #9b70e0; }
+  }
+</style>
+<rect class="surface" width="720" height="420" rx="8"/>
+<text class="title" x="16" y="28">Лічильник відвідувань: 10⁷ подій, 20 URL</text>
+<text class="sub" x="16" y="48">Медіана з 3 після 2 прогрівів; інваріант перевірено після кожного запуску</text>
+<rect class="f1" x="16" y="62" width="12" height="12" rx="2"/>
+<text class="sub" x="34" y="73">synchronized HashMap</text>
+<rect class="f2" x="190" y="62" width="12" height="12" rx="2"/>
+<text class="sub" x="208" y="73">HashMap + ReentrantLock</text>
+<rect class="f3" x="386.20000000000005" y="62" width="12" height="12" rx="2"/>
+<text class="sub" x="404.20000000000005" y="73">CHM + AtomicLong</text>
+<rect class="f4" x="530.6" y="62" width="12" height="12" rx="2"/>
+<text class="sub" x="548.6" y="73">CHM + LongAdder</text>
+<line class="base" x1="64" y1="360.0" x2="700" y2="360.0"/>
+<text class="tick" x="56" y="364.0" text-anchor="end">0</text>
+<line class="grid" x1="64" y1="324.0" x2="700" y2="324.0"/>
+<text class="tick" x="56" y="328.0" text-anchor="end">100</text>
+<line class="grid" x1="64" y1="288.0" x2="700" y2="288.0"/>
+<text class="tick" x="56" y="292.0" text-anchor="end">200</text>
+<line class="grid" x1="64" y1="252.0" x2="700" y2="252.0"/>
+<text class="tick" x="56" y="256.0" text-anchor="end">300</text>
+<line class="grid" x1="64" y1="216.0" x2="700" y2="216.0"/>
+<text class="tick" x="56" y="220.0" text-anchor="end">400</text>
+<line class="grid" x1="64" y1="180.0" x2="700" y2="180.0"/>
+<text class="tick" x="56" y="184.0" text-anchor="end">500</text>
+<line class="grid" x1="64" y1="144.0" x2="700" y2="144.0"/>
+<text class="tick" x="56" y="148.0" text-anchor="end">600</text>
+<line class="grid" x1="64" y1="108.0" x2="700" y2="108.0"/>
+<text class="tick" x="56" y="112.0" text-anchor="end">700</text>
+<text class="axis-title" x="16" y="100">мс</text>
+<text class="tick" x="170.0" y="380" text-anchor="middle">p = 2</text>
+<rect class="f1" x="105.5" y="240.5" width="30.0" height="119.5" rx="2"/>
+<text class="val" x="120.5" y="236.5" text-anchor="middle">332</text>
+<rect class="f2" x="138.5" y="121.7" width="30.0" height="238.3" rx="2"/>
+<text class="val" x="153.5" y="117.7" text-anchor="middle">662</text>
+<rect class="f3" x="171.5" y="322.2" width="30.0" height="37.8" rx="2"/>
+<text class="val" x="186.5" y="318.2" text-anchor="middle">105</text>
+<rect class="f4" x="204.5" y="342.4" width="30.0" height="17.6" rx="2"/>
+<text class="val" x="219.5" y="338.4" text-anchor="middle">49</text>
+<text class="tick" x="382.0" y="380" text-anchor="middle">p = 4</text>
+<rect class="f1" x="317.5" y="188.3" width="30.0" height="171.7" rx="2"/>
+<text class="val" x="332.5" y="184.3" text-anchor="middle">477</text>
+<rect class="f2" x="350.5" y="287.3" width="30.0" height="72.7" rx="2"/>
+<text class="val" x="365.5" y="283.3" text-anchor="middle">202</text>
+<rect class="f3" x="383.5" y="327.2" width="30.0" height="32.8" rx="2"/>
+<text class="val" x="398.5" y="323.2" text-anchor="middle">91</text>
+<rect class="f4" x="416.5" y="338.4" width="30.0" height="21.6" rx="2"/>
+<text class="val" x="431.5" y="334.4" text-anchor="middle">60</text>
+<text class="tick" x="594.0" y="380" text-anchor="middle">p = 8</text>
+<rect class="f1" x="529.5" y="194.0" width="30.0" height="166.0" rx="2"/>
+<text class="val" x="544.5" y="190.0" text-anchor="middle">461</text>
+<rect class="f2" x="562.5" y="287.6" width="30.0" height="72.4" rx="2"/>
+<text class="val" x="577.5" y="283.6" text-anchor="middle">201</text>
+<rect class="f3" x="595.5" y="311.8" width="30.0" height="48.2" rx="2"/>
+<text class="val" x="610.5" y="307.8" text-anchor="middle">134</text>
+<rect class="f4" x="628.5" y="335.9" width="30.0" height="24.1" rx="2"/>
+<text class="val" x="643.5" y="331.9" text-anchor="middle">67</text>
+<text class="axis-title" x="382.0" y="404" text-anchor="middle">кількість потоків p</text>
+</svg>

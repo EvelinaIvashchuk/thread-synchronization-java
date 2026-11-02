@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 420" width="720" height="420" role="img" aria-label="Час 10⁷ інкрементів одного лічильника">
+<style>
+  .surface { fill: #fcfcfb; }
+  .title { fill: #0b0b0b; font: 600 16px system-ui, -apple-system, "Segoe UI", sans-serif; }
+  .sub { fill: #52514e; font: 13px system-ui, -apple-system, "Segoe UI", sans-serif; }
+  .tick { fill: #898781; font: 12px system-ui, -apple-system, "Segoe UI", sans-serif; font-variant-numeric: tabular-nums; }
+  .val { fill: #52514e; font: 10.5px system-ui, -apple-system, "Segoe UI", sans-serif; font-variant-numeric: tabular-nums; }
+  .axis-title { fill: #52514e; font: 12px system-ui, -apple-system, "Segoe UI", sans-serif; }
+  .grid { stroke: #e1e0d9; stroke-width: 1; }
+  .base { stroke: #c3c2b7; stroke-width: 1; }
+  .f1 { fill: #2a78d6; } .f2 { fill: #eb6834; } .f3 { fill: #1baf7a; } .f4 { fill: #8a5cd1; }
+  @media (prefers-color-scheme: dark) {
+    .surface { fill: #1a1a19; }
+    .title { fill: #f0efec; }
+    .sub, .axis-title, .val { fill: #c3c2b7; }
+    .grid { stroke: #2c2c2a; }
+    .base { stroke: #383835; }
+    .f1 { fill: #3987e5; } .f2 { fill: #d95926; } .f3 { fill: #199e70; } .f4 { fill: #9b70e0; }
+  }
+</style>
+<rect class="surface" width="720" height="420" rx="8"/>
+<text class="title" x="16" y="28">Час 10⁷ інкрементів одного лічильника</text>
+<text class="sub" x="16" y="48">Медіана з 3 після 2 прогрівів; Apple M4, 10 ядер</text>
+<rect class="f1" x="16" y="62" width="12" height="12" rx="2"/>
+<text class="sub" x="34" y="73">synchronized</text>
+<rect class="f2" x="130.8" y="62" width="12" height="12" rx="2"/>
+<text class="sub" x="148.8" y="73">ReentrantLock</text>
+<rect class="f3" x="253" y="62" width="12" height="12" rx="2"/>
+<text class="sub" x="271" y="73">AtomicInteger</text>
+<line class="base" x1="64" y1="360.0" x2="700" y2="360.0"/>
+<text class="tick" x="56" y="364.0" text-anchor="end">0</text>
+<line class="grid" x1="64" y1="297.0" x2="700" y2="297.0"/>
+<text class="tick" x="56" y="301.0" text-anchor="end">100</text>
+<line class="grid" x1="64" y1="234.0" x2="700" y2="234.0"/>
+<text class="tick" x="56" y="238.0" text-anchor="end">200</text>
+<line class="grid" x1="64" y1="171.0" x2="700" y2="171.0"/>
+<text class="tick" x="56" y="175.0" text-anchor="end">300</text>
+<line class="grid" x1="64" y1="108.0" x2="700" y2="108.0"/>
+<text class="tick" x="56" y="112.0" text-anchor="end">400</text>
+<text class="axis-title" x="16" y="100">мс</text>
+<text class="tick" x="143.5" y="380" text-anchor="middle">p = 1</text>
+<rect class="f1" x="95.5" y="345.8" width="30.0" height="14.2" rx="2"/>
+<text class="val" x="110.5" y="341.8" text-anchor="middle">23</text>
+<rect class="f2" x="128.5" y="329.6" width="30.0" height="30.4" rx="2"/>
+<text class="val" x="143.5" y="325.6" text-anchor="middle">48</text>
+<rect class="f3" x="161.5" y="348.7" width="30.0" height="11.3" rx="2"/>
+<text class="val" x="176.5" y="344.7" text-anchor="middle">18</text>
+<text class="tick" x="302.5" y="380" text-anchor="middle">p = 2</text>
+<rect class="f1" x="254.5" y="243.9" width="30.0" height="116.1" rx="2"/>
+<text class="val" x="269.5" y="239.9" text-anchor="middle">184</text>
+<rect class="f2" x="287.5" y="176.7" width="30.0" height="183.3" rx="2"/>
+<text class="val" x="302.5" y="172.7" text-anchor="middle">291</text>
+<rect class="f3" x="320.5" y="307.9" width="30.0" height="52.1" rx="2"/>
+<text class="val" x="335.5" y="303.9" text-anchor="middle">83</text>
+<text class="tick" x="461.5" y="380" text-anchor="middle">p = 4</text>
+<rect class="f1" x="413.5" y="126.5" width="30.0" height="233.5" rx="2"/>
+<text class="val" x="428.5" y="122.5" text-anchor="middle">371</text>
+<rect class="f2" x="446.5" y="312.2" width="30.0" height="47.8" rx="2"/>
+<text class="val" x="461.5" y="308.2" text-anchor="middle">76</text>
+<rect class="f3" x="479.5" y="282.6" width="30.0" height="77.4" rx="2"/>
+<text class="val" x="494.5" y="278.6" text-anchor="middle">123</text>
+<text class="tick" x="620.5" y="380" text-anchor="middle">p = 8</text>
+<rect class="f1" x="572.5" y="129.0" width="30.0" height="231.0" rx="2"/>
+<text class="val" x="587.5" y="125.0" text-anchor="middle">367</text>
+<rect class="f2" x="605.5" y="309.7" width="30.0" height="50.3" rx="2"/>
+<text class="val" x="620.5" y="305.7" text-anchor="middle">80</text>
+<rect class="f3" x="638.5" y="164.7" width="30.0" height="195.3" rx="2"/>
+<text class="val" x="653.5" y="160.7" text-anchor="middle">310</text>
+<text class="axis-title" x="382.0" y="404" text-anchor="middle">кількість потоків p</text>
+</svg>
