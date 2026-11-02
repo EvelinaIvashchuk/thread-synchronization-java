@@ -1,0 +1,9 @@
+# Скомпільовані класи
+out/
+*.class
+
+# IDE та системні файли
+.idea/
+.vscode/
+*.iml
+.DS_Store
